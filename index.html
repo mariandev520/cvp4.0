@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random User Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+  
+        <div id="random-user" class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl">
+            <div class="">
+                <img id="user-avatar" src="https://randomuser.me/api/portraits/women/20.jpg" alt="User Avatar" class="rounded-full mx-auto p-6">
+                <h1 id="user-name" class="box-decoration-slice text-6xl text-center  bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-24 p-10 ...">Alice Johnson</h1>
+                <h2 id="user-email" class="text-right text-xl font-medium cursor-pointer text-gray-600 p-10"><i class="fas fa-envelope"></i> alice.johnson@example.com</h2>
+                <button id="user-phone" class="text-center text-xl font-xl text-blue-600"><i class="fas fa-phone"></i> +1 123-456-7890</h2>
+                <h2 id="user-location" class="text-center text-xl font-bold text-gray-600"><i class="fas fa-map-marker-alt"></i> San Francisco, USA</h2>
+            </div>
+            <div class="px-4 py-2">
+                <h2 class="text-3xl font-bold text-purple-800 mb-2 p-10">Experience</h2>
+                <ul id="user-experience" class="list-disc list-inside">
+                    <li>Software Developer at ACME Inc.</li>
+                    <li>Intern at XYZ Corp.</li>
+                </ul>
+                <h2 class="text-3xl font-bold text-purple-800 mb-2 p-10">Description</h2>
+                <ul id="user-experience" class="list-disc list-inside">
+                  <p class="text-center text-smal font-xl text-gray-600 p10">
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type
+                      specimen book. It has survived not only five centuries, but also the leap into
+                       electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                        and more recently with desktop publishing software like Aldus PageMaker including
+                         versions of Lorem Ipsum.
+                  </p>
+                </ul>
+                 
+<hr class="text-white mx-5 p-10" />
+<div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    <div class="py-3 sm:max-w-xl sm:mx-auto">
+      <div class="bg-white min-w-1xl flex flex-col rounded-xl shadow-lg">
+        <div class="px-12 py-5">
+          <h2 class="text-purple-800 text-3xl font-semibold">Tu Opinion me interesa</h2>
+        </div>
+        <div class="bg-gray-200 w-full flex flex-col items-center">
+          <div class="flex flex-col items-center py-6 space-y-3">
+            <span class="text-lg text-gray-800">Que puntaje le darias?</span>
+            <div class="flex space-x-3">
+              <svg class="w-12 h-12 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-12 h-12 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-12 h-12 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-12 h-12 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-12 h-12 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+          </div>
+          <div class="w-3/4 flex flex-col">
+            <textarea rows="3" class="p-4 text-gray-500 rounded-xl resize-none">Dejar comentario</textarea>
+            <button class="py-3 my-8 text-lg bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl text-white">enviar</button>
+          </div>
+        </div>
+        <div class="h-20 flex items-center justify-center">
+          <a href="#" class="text-gray-600">Tal vez Mas tarde</a>
+        </div>
+      </div>
+  
+      
+    </div>
+  </div>
+<footer class="footer footer-center  w-full p-4 bg-gray-300 text-gray-800">
+      <div class="text-center">
+        <p>
+          Copyright © 2022 -
+          <a class="font-semibold" href="mailto:m.sohanemon@gmail.com"
+            >SohanEmon</a
+          >
+        </p>
+      </div>
+    </footer>
+            </div>
+        </div>
+    </div>
+    
+     
+<div>
+    
+</div>
+
+</body>
+<body>
+
+    
+
+</body>
+
+</html>
