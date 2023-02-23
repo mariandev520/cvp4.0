@@ -1,0 +1,22 @@
+#whatsapp-button {
+    /* Centramos el botón en la pantalla */
+    display: block;
+    margin: 0 auto;
+
+    /* Le damos un ancho máximo */
+    max-width: 300px;
+
+    /* Personalizamos el fondo, el color de texto y la tipografía */
+    background-color: #25d366;
+    color: #fff;
+    font-weight: 700;
+
+    /* Personalizamos el padding y el radio de borde */
+    padding: 10px;
+    border-radius: 9999px;
+  }
+
+  /* Personalizamos el color de fondo cuando el botón es hover */
+  #whatsapp-button:hover {
+    background-color: #128c7e;
+  }
