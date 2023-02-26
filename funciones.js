@@ -36,7 +36,7 @@ fetch(cvNuevo) // la variable cvNuevo , es el resultado del boton cambiar Cv cua
         const listItem = document.createElement('li');
         listItem.textContent = `${exp.position} at ${exp.company}`;
         experienceList.appendChild(listItem)
-    })
+    }).reset()
 })}
 function enviarFormulario() {
     // Obtener los valores del formulario
