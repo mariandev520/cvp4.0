@@ -49,7 +49,7 @@ function enviarFormulario() {
     // Validar el número de teléfono
     const regexTelefono = /^[0-9]{8}$/; // el numero ingresado debe ser de 8 numeros se puede modificar la cantidad en este metodo.
     if (!regexTelefono.test(telefono)) {
-      alert('Por favor, introduzca un número de teléfono válido.');
+      alert('Por favor, introduzca un número de teléfono correcto ejemplo:22344556');
       return false;
     }
 
