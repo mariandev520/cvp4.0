@@ -4,15 +4,18 @@
 <head>
     <title>Random User Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="funciones.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="funciones.js"></script> <!-- conexion con Javascript en el raiz ,funciones.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!-- para todos los estilos seleccionamos Tailwindcss esta es la conexion desde CDN-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="">
+<body >
+<!-- Este proyecto se basa en un CV interactivo con Form de contacto validacion de campos y un boton de whatsApp 
+con la opcion de traer nuevas personas ficticas e ir cambiando de cv, manteniendo la misma estructura de cv -->
 
+    
 
-    <div id="random-user" class="max-w-md mx-auto bg-white rounded-x2 shadow-md overflow-hidden md:max-w-6xl">
+    <div id="random-user" class="max-w-md mx-auto bg-white rounded-x2 shadow-md overflow-hidden md:max-w-6xl"> <!-- el id "random user permite iterar los usuarios desde funciones y traerlos por defecto hay un solo usuario hasta que se presiona el boton Cambiar Cv abajo de el footer"-->
         <div class="">
             <img id="user-avatar" src="https://randomuser.me/api/portraits/women/20.jpg" alt="User Avatar"
                 class="rounded-full mx-auto p-12 m-4 rounded-lg shadow-lg  rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl animate__fadeInLeft p-20">
@@ -30,8 +33,8 @@
             <h2 id="user-email" class="text-center text-xl font-medium cursor-pointer text-gray-600 p-10"><i
                     class=""></i> alice.johnson@example.com</h2>
 
-            <p id="user-phone" class="text-center text-xl font-mono font-xl text-blue-600"><i></i>
-                +1 123-456-7890</h2>
+            <p  id="user-phone" class="text-center text-xl font-mono font-xl text-blue-600 cursor-pointer" onclick="openWhatsappChat()" >
+                +1 123-456-7890</p>
             <h2 id="user-location" class="text-center text-xl font-bold text-gray-600"><i
                     class="fas fa-map-marker-alt font-mono text-center"></i> San Francisco, USA</h2>
         </div>
@@ -53,6 +56,9 @@
                 <li>Software Developer at ACME Inc.</li>
                 <li>Intern at XYZ Corp.</li>
             </ul>
+
+
+            <!-- Section diseñada para sumar datos al cv-->
 
             <section class="relative isolate overflow-hidden bg-white py-24 px-6 sm:py-32 lg:px-8">
                 <div
@@ -115,7 +121,11 @@
 
 
     </div>
+
     </div>
+
+    <!--Form con validacion en Javascript , y alertas clasico, se omitio el diseño css en las alertas-->
+
     <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
 
@@ -140,13 +150,8 @@
                             <br><br>
                             <button
                                 class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                                type="button" value="Enviar" onclick="enviarFormulario()">Contactar</butto>
+                                type="button" value="Enviar" onclick="enviarFormulario()">Contact</butto>
                         </form>
-
-
-
-
-                        <label for="email-address" class="sr-only">Email address</label>
 
                     </div>
                 </div>
