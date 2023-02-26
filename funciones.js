@@ -1,7 +1,5 @@
 
-  function openWhatsappChat() {
-    window.open("https://wa.me/1234567890", "_blank");
-  }
+
 
   // Este metodo hace que el administrador itere los Cv que trae la Api externa, con un metodo booleano 
 
@@ -19,7 +17,8 @@ var cvNuevo = ''
     }
   
 
-// Meteodo que hace le llamado a la api y trae los datos .
+
+    // metodo trae los datos de la api https://randomuser.me/ y los itera
 
 fetch(cvNuevo) // la variable cvNuevo , es el resultado del boton cambiar Cv cuando se clikea 
 .then(response => response.json())
@@ -31,9 +30,10 @@ fetch(cvNuevo) // la variable cvNuevo , es el resultado del boton cambiar Cv cua
     document.getElementById('user-phone').innerHTML = ` ${user.phone}`;
     document.getElementById('user-location').innerHTML = ` ${user.location.city}, ${user.location.country}`;
 
+// 
+
     const experienceList = document.getElementById('user-experience');
-    user.experience.forEach(exp => {
-        const listItem = document.createElement('li');
+    user.experience.forEach(exp => { const listItem = document.createElement('li');
         listItem.textContent = `${exp.position} at ${exp.company}`;
         experienceList.appendChild(listItem)
     }).reset()
@@ -67,6 +67,8 @@ function enviarFormulario() {
 
 
   // Funcion que permite , reemplazar el numero de telefonico que trae la Api , del usuario que va iterando y abrir un chat con cada usuario.
+
+  // la estructura de codigo document.getElementById("user-phone").innerHTML.replace(/[-\s]/g, ""), es la variable que coloca el numero de celular aletorio segun el cv
 
   function openWhatsappChat() {
     window.open("https://wa.me/"+document.getElementById("user-phone").innerHTML.replace(/[-\s]/g, ""), "_blank");
