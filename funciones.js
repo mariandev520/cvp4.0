@@ -47,7 +47,7 @@ function enviarFormulario() {
     }
 
     // Validar el número de teléfono
-    const regexTelefono = /^[0-9]{8}$/;
+    const regexTelefono = /^[0-9]{8}$/; // el numero ingresado debe ser de 8 numeros se puede modificar la cantidad en este metodo.
     if (!regexTelefono.test(telefono)) {
       alert('Por favor, introduzca un número de teléfono válido.');
       return false;
@@ -61,8 +61,13 @@ function enviarFormulario() {
 
     return true;
   }
-  
+  function openWhatsappChat() {
+    window.open("https://wa.me/1234567890", "_blank");
+  }
+
+
+/*  
   // Agregamos un event listener al botón para que llame a la función openWhatsappChat() cuando se presione el botón.
   document.getElementById("whatsapp-button").addEventListener("click", openWhatsappChat);
 
- 
+ */
