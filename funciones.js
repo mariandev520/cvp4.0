@@ -71,7 +71,7 @@ function enviarFormulario() {
   // la estructura de codigo document.getElementById("user-phone").innerHTML.replace(/[-\s]/g, ""), es la variable que coloca el numero de celular aletorio segun el cv
 
   function openWhatsappChat() {
-    window.open("https://wa.me/"+document.getElementById("user-phone").innerHTML.replace(/[-\s]/g, ""), "_blank");
+    window.open("https://wa.me/"+document.getElementById("user-phone").innerHTML.replace(/[-()\s]/g, ''), "_blank");
   }
 
  
